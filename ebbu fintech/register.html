@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Business | LocalBiz Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">LocalBiz Directory</a>
+            <div class="nav-links">
+                <a href="listings.html">View Businesses</a>
+                <a href="register.html">Register Business</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Register Your Business</h2>
+            <p style="margin-bottom: 1.5rem; color: #6b7280;">Fill in the details below to make your business visible online.</p>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="businessName">Business Name</label>
+                    <input type="text" id="businessName" placeholder="e.g. Philisaint Poultry Farm" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Business Category</label>
+                    <input type="text" id="category" placeholder="e.g. Poultry Farm, Grocery, Fashion" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="e.g. Abakaliki, Ebonyi State" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="products">Products or Services (comma separated)</label>
+                    <textarea id="products" rows="3" placeholder="e.g. Eggs, Broilers, Layers" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="e.g. +2348012345678" required>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Register Business</button>
+            </form>
+            <div id="successMessage" style="display: none; color: green; margin-top: 1rem; text-align: center; font-weight: bold;">
+                Business Registered Successfully!
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

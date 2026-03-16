@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory | Search Local Businesses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">LocalBiz Directory</a>
+            <div class="nav-links">
+                <a href="listings.html">View Businesses</a>
+                <a href="register.html">Register Business</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by name, product or location (e.g. Poultry Farm in Abakaliki)">
+            <button id="searchBtn" class="btn">Search</button>
+        </div>
+
+        <div id="businessListings" class="business-list">
+            <!-- Businesses will be loaded here dynamically by JavaScript -->
+            <p style="text-align: center; color: #6b7280; grid-column: 1/-1;">Loading businesses...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
